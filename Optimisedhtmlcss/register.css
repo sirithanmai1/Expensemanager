@@ -1,0 +1,59 @@
+/* Global styles for the body */
+body {
+    display: flex; /* Enables flexbox layout for centering content */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Ensures the body takes up the full viewport height */
+    margin: 0; /* Removes default margin */
+    font-family: Arial, sans-serif; /* Sets a clean sans-serif font */
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Styling for the card container */
+.card {
+    background-color: white; /* White background for the card */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 2rem; /* Padding inside the card */
+    color: #333; /* Text color */
+    width: 100%; /* Full width for smaller screens */
+    max-width: 600px; /* Limits width for larger screens */
+}
+
+/* Focus styles for form inputs */
+.form-control:focus, .form-select:focus {
+    border-color: #ef7407be; /* Custom border color on focus */
+    box-shadow: 0 0 6px rgba(192, 105, 12, 0.962); /* Glow effect */
+    outline: none; /* Removes default outline */
+}
+
+/* Styling for form labels */
+.form-label {
+    font-size: 1rem; /* Adjusts label font size */
+    font-weight: 600; /* Makes labels bold */
+    color: #d26110be; /* Custom label color */
+}
+
+/* Custom styling for the submit button */
+.btn-custom {
+    background-color: #b75b0c; /* Primary button color */
+    color: white; /* White text for contrast */
+    font-size: 1rem; /* Adjusts font size */
+    font-weight: bold; /* Bold text */
+    padding: 0.75rem; /* Padding for the button */
+    border-radius: 6px; /* Rounded corners */
+    border: none; /* Removes default border */
+    transition: transform 0.2s ease; /* Smooth hover animation */
+}
+
+/* Hover effect for the button */
+.btn-custom:hover {
+    background-color: #d38a13ab; /* Slightly lighter hover color */
+    transform: translateY(-2px); /* Lifts the button slightly */
+}
+
+/* Focus styles for buttons and inputs */
+button:focus, input:focus, select:focus, textarea:focus {
+    outline: none; /* Removes default outline */
+    box-shadow: 0 0 8px rgba(149, 85, 17, 0.6); /* Matches button color */
+}

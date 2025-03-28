@@ -1,0 +1,262 @@
+
+/* General styles for HTML and body */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow:hidden;
+  }
+  
+ /* Sidebar styling */
+ .sidebar {
+    background-color: #343a40; /* Dark gray background for the sidebar */
+    color: white; /* White text color for readability */
+    padding: 2rem; /* Adds space inside the sidebar */
+    width: 260px; /* Adjusted width to prevent layout issues */
+    height: 100vh; /* Full height of the viewport */
+    position: fixed; /* Keeps the sidebar in place while scrolling */
+    font-family: Arial, sans-serif; /* Clean and modern font */
+    display: flex; /* Flexbox layout for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 1rem; /* Adds spacing between sidebar items */
+  }
+
+  
+  /* Sidebar Links */
+  .sidebar a {
+    color: white; /* White text color */
+    text-decoration: none; /* Removes underline from links */
+    display: flex; /* Flex layout for icon and text alignment */
+    align-items: center; /* Vertically centers the items */
+    gap: 10px; /* Spacing between icons and text */
+    padding: 0.5rem; /* Adds clickable area for links */
+    border-radius: 4px; /* Smooth corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effects */
+  }
+  
+  /* Hover Effect for Sidebar Links */
+  .sidebar a:hover {
+    background-color: #495057; /* Lighter gray background on hover */
+    color: #ffc107; /* Golden color for text on hover */
+  }
+  
+  /* Divider Line in Sidebar */
+  .hr-divider {
+    border-color: #6c757d; /* Muted gray color for dividers */
+  }
+  
+  /* Profile Section */
+.profile-section {
+    text-align: center; /* Centers profile image and name */
+    margin-bottom: 1rem; /* Adds spacing below the profile section */
+}
+  .profile-section img {
+    width: 80px; /* Fixed size for profile image */
+    height: 80px; /* Makes it square */
+    object-fit: cover; /* Ensures the image fits within its boundaries */
+  }
+  
+  .profile-section .profile-name {
+    font-weight: bold; /* Makes the name stand out */
+    margin-top: 0.5rem; /* Adds spacing above the name */
+  }
+  
+  /* Logout section styling */
+.logout-section {
+    margin-top: auto; /* Push to bottom */
+    display: flex; /* Flex layout */
+    align-items: center; /* Center align items */
+    gap: 10px; /* Space between items */
+}
+.logout-section {
+    margin-top: auto; /* Pushes logout button to the bottom */
+}
+
+/* Logout link */
+.logout {
+    color: coral; /* Coral color */
+    text-decoration: none; /* Remove underline */
+    display: flex; /* Flex layout for icon and text */
+    align-items: center; /* Center icon and text vertically */
+    gap: 10px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    justify-content: flex-end; 
+}
+.logout:hover {
+    background-color: #dc3545; /* Red background */
+    color: white; /* White text */
+    border-radius: 4px; /* Rounded corners */
+    padding: 0.5rem; /* Add padding */
+}
+/* Main content styles */
+main {
+    margin-left: 260px; /* Adds space to the left for the sidebar */
+    padding: 2rem; /* Adds padding inside the main content */
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Enables vertical scrolling */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Card styles */
+.card {
+    margin-bottom: 1.5rem; /* Adds space below each card */
+}
+
+/* Table container styles */
+.table-responsive {
+    margin-top: 1.5rem; /* Adds space above tables */
+}
+
+/* Summary box styles */
+.summary-box {
+    background-color: #f8f9fa; /* Light gray background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounds the corners */
+    padding: 1.5rem; /* Adds padding inside the box */
+    text-align: center; /* Centers text */
+    width: 200px; /* Fixed width */
+}
+
+/* Summary box heading styles */
+.summary-box h4 {
+    font-size: 1.5rem; /* Font size for heading */
+    margin-bottom: 0.5rem; /* Space below heading */
+}
+
+/* Summary box paragraph styles */
+.summary-box p {
+    font-size: 1.25rem; /* Font size for text */
+    color: #6c757d; /* Muted gray text color */
+}
+
+/* Icon container styles */
+.icon-container {
+    display: flex; /* Enables flexbox layout */
+    gap: 10px; /* Adds space between icons */
+    justify-content: center; /* Centers icons horizontally */
+    font-size: 18px; /* Icon font size */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+/* Default icon styles */
+.icon-container i {
+    color: #555; /* Default icon color */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Icon hover effect */
+.icon-container i:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Trash icon specific color */
+.icon-container .fa-trash-alt {
+    color: red; /* Red color for trash icon */
+}
+
+/* Action link styles */
+.action-link {
+    font-size: 0.85rem; /* Font size for links */
+    font-weight: 600; /* Bold text */
+    color: #007bff; /* Blue text color */
+    text-decoration: none; /* Removes underline */
+    padding: 0.2rem 0.4rem; /* Padding inside links */
+    border: 1px solid transparent; /* Transparent border for hover effect */
+    border-radius: 20px; /* Rounds the edges */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Action link hover effect */
+.action-link:hover {
+    background-color: #e9ecef; /* Light gray background */
+    color: black; /* Black text color */
+}
+
+/* Pagination container alignment */
+.pagination-container {
+    text-align: right; /* Aligns pagination to the right */
+    margin-top: 0.5rem; /* Adds space above pagination */
+}
+
+/* Pagination styles */
+.pagination {
+    list-style: none; /* Removes bullets from pagination */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+    display: inline-flex; /* Displays items in a row */
+    gap: 0.5rem; /* Adds space between items */
+}
+
+/* Pagination link styles */
+.pagination li a {
+    text-decoration: none; /* Removes underline */
+    color: #555; /* Default text color */
+    padding: 0.3rem 0.6rem; /* Padding around links */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounds the edges */
+}
+
+/* Pagination link hover effect */
+.pagination li a:hover {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #000; /* Black text color */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .filter-row {
+        flex-wrap: wrap; /* Allows items to wrap */
+        justify-content: center; /* Centers items */
+    }
+}
+
+/* Form control styles */
+.form-control,
+.form-select {
+    height: 35px; /* Fixed height for inputs */
+    font-size: 0.9rem; /* Font size */
+}
+
+/* Focus styles for form controls */
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none; /* Removes default shadow */
+    border-color: #ccc; /* Light gray border */
+}
+
+/* Table container styles */
+.table-container {
+    position: relative; /* Relative positioning */
+    margin-bottom: 1rem; /* Space below table */
+}
+
+/* Table styles */
+.table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Collapses borders */
+    margin-bottom: 0; /* Removes margin below table */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Horizontal divider styles */
+.hr-divider {
+    margin: 1rem 0; /* Space above and below divider */
+    border-color: #a9b3bc; /* Light gray border */
+}
+
+/* Logout section styles */
+.logout-section {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Centers items vertically */
+    gap: 15px; /* Space between items */
+    margin-bottom: 2rem; /* Space below section */
+}
+
+/* User icon styles */
+.user-icon {
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    object-fit: cover; /* Ensures image fits inside the container */
+    border-radius: 50%; /* Circular image */
+    border: 2px solid white; /* White border */
+}

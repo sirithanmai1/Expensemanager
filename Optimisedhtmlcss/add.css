@@ -1,0 +1,174 @@
+/* General Reset and Body Styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: #343a40; /* Dark gray background for the sidebar */
+  color: white; /* White text color for readability */
+  padding: 2rem; /* Adds space inside the sidebar */
+  width: 260px; /* Adjusted width to prevent layout issues */
+  height: 100vh; /* Full height of the viewport */
+  position: fixed; /* Keeps the sidebar in place while scrolling */
+  font-family: Arial, sans-serif; /* Clean and modern font */
+  display: flex; /* Flexbox layout for alignment */
+  flex-direction: column; /* Stack elements vertically */
+  gap: 1rem; /* Adds spacing between sidebar items */
+}
+
+/* Sidebar Links */
+.sidebar a {
+  color: white; /* White text color */
+  text-decoration: none; /* Removes underline from links */
+  display: flex; /* Flex layout for icon and text alignment */
+  align-items: center; /* Vertically centers the items */
+  gap: 10px; /* Spacing between icons and text */
+  padding: 0.5rem; /* Adds clickable area for links */
+  border-radius: 4px; /* Smooth corners for links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effects */
+}
+
+/* Hover Effect for Sidebar Links */
+.sidebar a:hover {
+  background-color: #495057; /* Lighter gray background on hover */
+  color: #ffc107; /* Golden color for text on hover */
+}
+
+/* Divider Line in Sidebar */
+.hr-divider {
+  border-color: #6c757d; /* Muted gray color for dividers */
+}
+
+/* Profile Section */
+.profile-section {
+  text-align: center; /* Centers profile image and name */
+  margin-bottom: 1rem; /* Adds spacing below the profile section */
+}
+
+.profile-section img {
+  width: 80px; /* Fixed size for profile image */
+  height: 80px; /* Makes it square */
+  object-fit: cover; /* Ensures the image fits within its boundaries */
+}
+
+.profile-section .profile-name {
+  font-weight: bold; /* Makes the name stand out */
+  margin-top: 0.5rem; /* Adds spacing above the name */
+}
+
+/* Logout Section */
+.logout-section {
+  margin-top: auto; /* Pushes logout button to the bottom */
+}
+
+.logout {
+  color: coral; /* Coral color for logout text */
+  text-decoration: none; /* Removes underline */
+  display: flex; /* Aligns icon and text */
+  gap: 10px; /* Adds spacing between icon and text */
+  align-items: center; /* Vertically centers items */
+}
+
+.logout:hover {
+  background-color: #dc3545; /* Red background on hover */
+  color: white; /* White text on hover */
+  padding: 0.5rem; /* Adds padding for better hover effect */
+  border-radius: 4px; /* Smooth corners */
+}
+
+/* Main Content Styling */
+main {
+  margin-left: 260px; /* Offset to match sidebar width */
+  padding: 2rem; /* Padding around content */
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  font-family: Arial, sans-serif; /* Font family */
+}
+
+/* Form Container Styling */
+.form-container {
+  background-color: white; /* White background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 1rem; /* Padding inside the container */
+  margin: 2rem auto; /* Center alignment */
+  max-width: 1000px; /* Maximum width */
+}
+
+.form-label {
+  font-size: 1rem; /* Default text size */
+  font-weight: 600; /* Semi-bold text */
+  color: #d26110be; /* Brownish color */
+}
+
+.form-control, .form-select {
+  font-size: 1rem; /* Default text size */
+  padding: 0.75rem; /* Padding inside inputs */
+  border: 1px solid #d1dce8; /* Light gray border */
+  border-radius: 6px; /* Rounded corners */
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #ef7407be; /* Highlighted border */
+  box-shadow: 0 0 6px rgba(192, 105, 12, 0.962); /* Glow effect */
+}
+
+textarea.form-control {
+  resize: none; /* Prevent resizing */
+}
+
+fieldset {
+  border: 1px solid #c1611d; /* Subtle border for grouping */
+  padding: 1.5rem; /* Padding inside fieldset */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 1.5rem; /* Spacing between fieldsets */
+}
+
+/* Button Styling */
+.btn-custom {
+  background-color: #b75b0c; /* Orange color */
+  color: white; /* White text */
+  font-size: 1rem; /* Default text size */
+  font-weight: bold; /* Bold text */
+  padding: 0.75rem; /* Padding inside button */
+  border-radius: 6px; /* Rounded corners */
+}
+
+.btn-custom:hover {
+  background-color: #d38a13ab; /* Darker orange */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Title Styling */
+h1 {
+  display: flex; /* Center alignment */
+  justify-content: center; /* Horizontal alignment */
+  align-items: center; /* Vertical alignment */
+  margin-top: 1rem; /* Vertical spacing */
+  padding-top: 1rem; /* Additional padding */
+  font-weight: Bold;
+}
+
+/* Focus Effects */
+button:focus, input:focus, select:focus, textarea:focus {
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 8px rgba(149, 85, 17, 0.6); /* Glow effect */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .sidebar {
+    position: static; /* Inline positioning */
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height */
+    padding: 1rem; /* Smaller padding */
+  }
+
+  main {
+    margin-left: 0; /* Remove offset */
+    padding: 1rem; /* Smaller padding */
+  }
+}
